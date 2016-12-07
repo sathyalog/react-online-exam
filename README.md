@@ -1,5 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+Also, we were using [json-server](https://github.com/typicode/json-server) to add data into mock db. You can find db.json in *mockserver* folder.
+
+You can view your db by running the following in cmd prompt..
+
+**json-server --watch mockserver/db.json --port 3004**
+
+As i am using react-app in 3000 port, i changed it to 3001 in npm global directories.
+
+Windows:
+
+change host(H) as 127.0.0.1 and port(p) 3001 in users/username/appdata/roaming/npm/node_modules/json-server/bin/index.js
+
+Mac:
+
+Finder->Go to folder->/usr/local/lib/node_modules
+Now goto json-server folder->lib/cli/index.js
+change host(H) as 127.0.0.1 and port(p) 3001
+
+Now you can check that in cmd prompt..
+
+json-server --watch mockserver/db.json
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
@@ -900,13 +922,13 @@ This feature is experimental and still [has major usage issues](https://github.c
 
 ### Editor Integration
 
-If you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates. 
+If you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates.
 
 ![VS Code Jest Preview](https://cloud.githubusercontent.com/assets/49038/20795349/a032308a-b7c8-11e6-9b34-7eeac781003f.png)
 
 ## Developing Components in Isolation
 
-Usually, in an app, you have a lot of UI components, and each of them has many different states. 
+Usually, in an app, you have a lot of UI components, and each of them has many different states.
 For an example, a simple button component could have following states:
 
 * With a text label.

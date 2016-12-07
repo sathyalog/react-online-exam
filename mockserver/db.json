@@ -1,0 +1,17 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "author": "Sathya",
+      "question":"Inside which HTML element do we put the JavaScript?",
+      "options":[
+        "<scripting>",
+        "<script>",
+        "<js>",
+        "None of the above"
+      ],
+      "answer":"<script>"
+    }
+
+  ]
+}
