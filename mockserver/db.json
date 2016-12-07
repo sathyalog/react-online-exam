@@ -3,15 +3,25 @@
     {
       "id": 1,
       "author": "Sathya",
-      "question":"Inside which HTML element do we put the JavaScript?",
-      "options":[
+      "question": "Inside which HTML element do we put the JavaScript?",
+      "options": [
         "<scripting>",
         "<script>",
         "<js>",
         "None of the above"
       ],
-      "answer":"<script>"
+      "answer": "<script>"
+    },
+    {
+      "question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+      "options": [
+        "<script src=\"xxx.js\">",
+        "<script href=\"xxx.js\">",
+        "<script name=\"xxx.js\">",
+        "All of the above"
+      ],
+      "answer": "<script src=\"xxx.js\">",
+      "id": 2
     }
-
   ]
 }
